@@ -1,0 +1,25 @@
+{
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "name": "nest-security-module",
+  "version": "1.0.0",
+  "description": "hashPassword and authGuard module",
+  "author": "Anderson Oliveira",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.2.1",
+    "bcrypt": "^5.1.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^18.11.18",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  }
+}
